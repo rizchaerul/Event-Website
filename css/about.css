@@ -1,0 +1,261 @@
+img {
+    width: 100%;
+}
+
+#content {
+    background-color: #f5f5f1;
+    font-family: calibri;
+}
+
+body {
+    //background-color: gainsboro;
+}
+
+.title {
+    color: white;
+    position: absolute;
+    left: 50px;
+    font-size: 50px;
+}
+
+.container {
+    position: relative;
+}
+
+#one {
+    top: 50px;
+}
+
+#two {
+    top: 100px;
+}
+
+.p1 {
+    margin-left: 550px;
+    width: 400px;
+    
+}
+
+.p3 {
+    margin-left: 100px;
+    width: 400px;
+}
+
+.p2 {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#square {
+    background-color: #f5f5f1;
+    border-radius: 10px;
+    width: 600px;
+    height: 300px;
+
+    top: 90px;
+    left: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    position: absolute;
+    overflow: hidden;
+    /* top: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+#innerSquare {
+    background-color: #44465F;
+    width: 100px;
+    height: 300px;
+    border-radius: 10px;
+    top: 0;
+}
+
+#contact {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    background-image: url("../images/about/maps.png");
+    //background-color: black;
+}
+
+#maps {
+    margin-top: 0;
+    padding: 0;
+}
+
+.a {
+    margin: -100% 0 0 15%;
+}
+
+#tw {
+    margin-top: 55px;
+    width: 50px;
+     margin-left: 25px;
+}
+
+#ig {
+    margin-top: 25px;
+    width: 50px;
+     margin-left: 25px;
+}
+
+#fb {
+    margin-top: 25px;
+    width: 60px;
+    margin-left: 0;
+    margin-left: 20px;
+}
+
+#tw:hover, #ig:hover, #fb:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+#hq:hover {
+    filter: brightness(50%);
+    transition: 500ms;
+}
+
+#testimoni h1 {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#testimoni{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#card {
+    background-color: #44465F;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 25px;
+}
+
+#card img {
+    width: 50px;
+    margin-left: 10px;
+}
+
+#judul {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#card p {
+    color: white;
+    margin-left: 35px;
+    width: 250px;
+}
+
+.line {
+    background-color: red;
+    width: 150px;
+    height: 10px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#line1 {
+    margin-left: 550px;
+}
+
+#line2 {
+    margin-left: 100px;
+}
+
+footer {
+    background-color: black;
+}
+
+@media only screen and (max-width: 800px){
+    #contact{
+        background-size: 100% 100%;
+    }
+
+    #square {
+        width: 70%;
+        height: 250px;
+        top: 30%;
+        left: 14%;
+    }
+
+    .a{
+        margin: -120% 0 0 15%;
+        height: 120%;
+    }
+
+    #innerSquare {
+        width: 20%;
+        height: 250px;
+        top: 0;
+    }
+
+    #tw {
+        margin-top: 20px;
+        width: 6.5vw;
+        margin-left: 11px;
+    }
+
+    #ig {
+        margin-top: 20px;
+        width: 6.5vw;
+        margin-left: 11px;
+    }
+
+    #fb {
+        margin-top: 20px;
+        width: 6.5vw;
+        margin-left: 11px;
+    }
+
+    .p1 {
+        margin-left: 20px;
+        width: 80%;
+    }
+
+    #line1 {
+        width: 35%;
+        margin-left: 20px;
+    }
+
+    .p3 {
+        margin-left: 20px;
+        width: 80%;
+    }
+
+    #line2 {
+        width: 40%;
+        margin-left: 20px;
+    }
+
+    #judul{
+        width: 300px;
+        text-align: center;
+    }
+
+    .container{
+        height: 250px;
+        overflow: hidden;
+        background-size: cover;
+    }
+
+    .container img{
+        height: 100%;
+    }
+
+}

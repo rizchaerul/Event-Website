@@ -1,0 +1,326 @@
+body{
+    background-color: white;
+}
+
+#content{
+    background-color: white;
+    padding-top: 20px;
+}
+
+#content h1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+hr {
+    border-top: 5px double #000;
+    width: 40%;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pajangan{
+    width: 920px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px black;
+}
+
+.pajang{
+    width: 230px;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.pajang img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+    border: 1px solid black;
+    transition: 0.3s;
+    background-position: 50% 50%;
+}
+
+.pajang img:hover{
+    transform: scale(1.3);
+    filter: brightness(100%);
+}
+
+.product{
+    width: 220px;
+    //background-color: black;
+    background-color: #E50914;
+    margin: 20px 10px 0px 18px;
+    transition: 0.5s;
+    cursor: pointer;
+    text-align: center;
+    //box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.8);
+}
+
+.product img{
+    width: 100%;
+    background-size: cover;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.product h2, .product h3{
+    text-align: center;
+    border: 1px solid silver;
+    border-top: none;
+    border-bottom: none;
+    margin: 0;
+    padding: 6px 5px;
+    font-style: italic;
+}
+
+.product h2{
+    color: white;
+    text-shadow: 0 0 2px black;
+}
+
+.product h3{
+    color: black;
+    text-shadow: 0 0 1px black;
+}
+
+.square{
+    width: 99.1%;
+    border: 1px solid silver;
+    border-bottom: none;
+    overflow: hidden;
+}
+
+.buy{
+    background-color: #3944BC;   
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 18px;
+    margin: 0px 0;
+    font-weight: bold;
+    border: none;
+    color: #fff;
+    transition: 0.5s;
+    box-shadow: 2px 1px 5px black;
+}
+
+.buy:hover{
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(315deg, rgb(5, 77, 184)30%,rgb(12, 75, 250)60%);
+    cursor: pointer;
+    text-shadow: 0 0 1px black;
+}
+
+.product p{
+    border: 1px solid silver;
+    border-top: none;
+    margin: 0;
+    padding: 15px;
+}
+
+.product:hover, .product:hover button{
+    box-shadow: 1px 1px 10px black;
+}
+
+.product:hover img{
+    transform: scale(1.3);
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal img{
+    width: 600px;
+    height: 600px;
+    display: block;
+    margin: 100px auto;
+    border: 2px solid white;
+}
+
+.exit{
+    cursor: pointer;
+    font-size: 50px;
+    color: red;
+    top:0;
+    left: 75%;
+    font-weight: bold;
+    position: absolute;
+}
+
+.exit1{
+    cursor: pointer;
+    font-size: 50px;
+    color: red;
+    top: -50px;
+    left: 92%;
+    font-weight: bold;
+    position: absolute;
+}
+
+.buyform{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.bg{
+    margin: 20px auto;
+    padding: 20px;
+    display: block;
+    width: 500px;
+    background: white;
+    position: relative;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: darkblue;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: large;
+}
+
+input[type=submit]:hover {
+  box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.8);
+}
+
+#form1 #error {
+    color: red;
+    font-weight: bold;
+}
+
+.more{
+    display: none;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.view{
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    position: relative;
+    margin: 50px 0 30px 0;
+}
+
+.load{
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    background-color: #3944BC;
+    cursor: pointer;
+    box-shadow: 2px 1px 5px black;
+    text-shadow: 0 0 1px black;
+}
+
+footer{
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 800px){
+    .pajangan{
+        width: 100%;
+        margin: 20px 0px 0px 0px;
+        box-shadow: 0px 0px 0px white;
+    }  
+
+    .pajang{
+        width: 300px;
+        height: 300px;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    } 
+
+    .product{
+        width: 300px;
+        margin: 20px 18px 0px 18px;
+    }
+
+    .square{
+        width: 100%;
+    }
+
+    .flex{
+        justify-content: center;
+    }
+
+    .view{
+        text-align: center;
+    }
+
+    .more{
+        justify-content: center;
+    }
+
+    .modal img{
+        width: 80%;
+        height: 60%;
+    }  
+
+    .buyform{
+        width: 100%;
+        height: 100%;
+    }
+
+    .bg{
+        margin: 10px auto;
+        padding: 20px;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 10px 5px;
+    }
+
+    input[type=submit] {
+        width: 100%; 
+        padding: 10px 20px;
+    }
+
+    .exit1{
+        top: -46px;
+        position: fixed;
+        left: 90%;
+    }   
+
+
+}

@@ -1,0 +1,412 @@
+hr {
+    //border-top: 5px double #000;
+    width: 60%;
+    margin-bottom: 40px;
+}
+
+#imageHeader {
+    width: 1000px;
+}
+
+#imageContainer {
+    position: relative;
+}
+
+#imageContainer h1 {
+    position: absolute;
+    top: 200px;
+    right: 600px;
+    color: white;
+}
+
+#aboutContainer {
+    background-color: lightgray;
+    width: 1000px;
+    height: 200px;
+    position: absolute;
+    top: 200px;
+}
+
+#slider{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+#gambar{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+}
+
+#gambar img{
+    width: 20%;
+    height: 500px;
+    float: left;
+}
+
+.nextbtn{
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    background-color:transparent;
+    color: white;
+    font-size: 50px;
+    margin-right: 5px;
+    border: none;
+    right: 0px;
+    padding-bottom: 8px;
+}
+
+.prevbtn{
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    background-color: transparent;
+    color: white;
+    font-size: 50px;
+    margin-left: 5px;
+    border: none;
+    left: 0px;
+    padding-bottom: 8px;
+}
+
+#indicator{
+    text-align: center;
+    display: block;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    position: absolute;   
+}
+
+.titik{
+    cursor: pointer;
+    width: 15px;
+    margin-left: 5px;
+    height: 15px;
+    background-color: gray;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+div .active{
+    background-color: white;
+}
+
+.caption {
+    text-align: center;
+    display: block;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    margin: 360px 0px;
+    padding: 30px 0px;
+    //background-color:rgba(0, 0, 0, 0.8);
+    width: 1000px;
+    height: 140px;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), black);
+}
+
+.caption1{
+    text-align: center;
+    display: block;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    margin: 360px 1000px;
+    padding: 30px 0px;
+    //background-color:rgba(0, 0, 0, 0.8);
+    width: 1000px;
+    height: 140px;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), black);
+}
+
+.caption2{
+    text-align: center;
+    display: block;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    margin: 360px 2000px;
+    padding: 30px 0px;
+    //background-color:rgba(0, 0, 0, 0.8);
+    width: 1000px;
+    height: 140px;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), black);
+}
+
+.caption3{
+    text-align: center;
+    display: block;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    margin: 360px 3000px;
+    padding: 30px 0px;
+    //background-color:rgba(0, 0, 0, 0.8);
+    width: 1000px;
+    height: 140px;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), black);
+}
+
+.caption4{
+    text-align: center;
+    display: block;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    margin: 360px 4000px;
+    padding: 30px 0px;
+    //background-color:rgba(0, 0, 0, 0.8);
+    width: 1000px;
+    height: 140px;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), black);
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: black;
+    overflow: hidden;
+    color: white;
+}
+
+.card .image{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.card:hover img{
+    transform: scale(1.2);   
+    transition: 1s ease;
+}
+
+.card h1 {
+    color: red;
+}
+
+.card img {
+    width: 100%;
+}
+
+.lineup {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.h1lineup {
+    width: 200px;
+    margin-left: 425px;
+    letter-spacing: 3px;
+}
+
+.information {
+    width: 1000px;
+}
+
+#info {
+    position: relative;
+}
+
+#infoLogo {
+    color: red;
+    text-align: center;
+    font-size: 40px;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text{
+    left: 50%;
+    top: 180px;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+    width: 70%;
+    position: absolute;
+    text-align: center;
+    color: white;
+}
+
+.icon {
+    width: 75px;
+    position: absolute;
+}
+
+#loc {
+    bottom: 60px;
+    left: 240px;
+    transform: translate(-50%, -50%);
+}
+
+#cal {
+    bottom: 60px;
+    right: 140px;
+    transform: translate(-50%, -50%);
+}
+
+#clock {
+    bottom: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#locationText{
+    width: 300px;
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    left: 320px;
+    transform: translate(-50%, -50%);
+}
+
+#DateText{
+    width: 300px;
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    left: 580px;
+    transform: translate(-50%, -50%);
+}
+
+#TimeText{
+    width: 300px;
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    left: 870px;
+    transform: translate(-50%, -50%);
+}
+
+#logoInfo {
+    height: 100px;
+    margin-top: 70px;
+}
+
+@media only screen and (max-width: 800px){
+
+    #slider{
+        height: 350px;
+    }
+
+    #gambar img{
+        height: 400px;
+    }
+
+    .caption {
+        width: 20%;
+        height: 80px;
+        margin: 250px 0;
+        padding: 10px 0px;
+    }
+
+    .caption1 {
+        width: 20%;
+        height: 80px;
+        margin: 250px 20%;
+        padding: 10px 0px;
+    }
+
+    .caption2 {
+        width: 20%;
+        height: 80px;
+        margin: 250px 40%;
+        padding: 10px 0px;
+    }
+
+    .caption3 {
+        width: 20%;
+        height: 80px;
+        margin: 250px 60%;
+        padding: 10px 0px;
+    }
+
+    .caption4 {
+        width: 20%;
+        height: 80px;
+        margin: 250px 80%;
+        padding: 10px 0px;
+    }
+
+    .h1lineup {
+        margin: 40px 0 0 0;
+        width: 100%;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+
+    .card{
+        margin-bottom: 30px;
+    }
+
+    .information{
+        width: 100%;
+        height: 100%;
+    }
+
+    #info{
+        height: 400px;
+        margin-bottom: 40px;
+    }
+
+    .text{
+        font-size: 2.8vw;
+        top: 47%;
+    }  
+
+    #logoInfo{
+        width: 20%;
+        height: 20%;
+        margin-top: 10%;
+    } 
+
+    .icon {
+        width: 5vw;
+    }
+
+    #loc {
+        bottom: 9%;
+        left: 25%;
+    }
+
+    #cal {
+        bottom: 9%;
+        left: 50%;
+    }
+
+    #clock {
+        bottom: 9%;
+        left: 75%;
+    }
+
+    #locationText{
+        font-size: 1.9vw;
+        width: 20vw;
+        bottom: 3%;
+        left: 28%;
+    }
+
+    #DateText{
+        font-size: 1.9vw;
+        width: 20vw;
+        bottom: 3%;
+        left: 53%;
+    }
+
+    #TimeText{
+        font-size: 1.9vw;
+        width: 20vw;
+        bottom: 3%;
+        left: 79%;
+    }
+
+}

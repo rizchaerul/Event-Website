@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/buy.css">
+    <title>Buy Ticket</title>
+</head>
+
+<body>
+    <header>
+        <div id="navBar">
+            <a href="index.html" class="h3"><img src="images/navigation/logo.png" class="icon1"></a>
+            <a id="buyTicket" href="buy.html">Buy Ticket</a>
+            <div class="dropdown">
+                <a href="#"><img src="images/navigation/3bar.png" class="icon3"></a>
+                <div class="dropcontent">
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Concert Gallery</a>
+                    <a href="store.html">Merch Store</a>
+                    <a href="about.html">About Us</a>
+                </div>
+            </div>  
+        </div>
+       
+    </header>
+
+    <div id="content">
+        <div id="mobileView">
+            <a href="index.html">Home</a>
+            <a href="store.html">Merch Store</a>
+            <a href="gallery.html">Concert Gallery</a>
+            <a href="about.html">About Us</a>
+        </div>
+        <h1 class="judul">TICKET FORM</h1>
+        <div id="headerImg">
+            <img src="images/ticket/header.jpg">
+        </div>
+        
+        <form id="form1" onsubmit="return checkForm()" action="#" method="POST">
+            <label for="name">Name</label>
+            <br>
+            <input type="text" id="name" placeholder="Fullname">
+
+            <br>
+            <label for="email">Email</label>
+            <br>
+            <input type="text" id="email" placeholder="Email">
+
+            <br>
+            <label for="phone">Phone</label>
+            <br>
+            <input type="text" id="phone" placeholder="(+62)">
+
+            <br>
+            <label for="ticketType">Ticket Type</label>
+            <br>
+            <select id="ticketType">
+                <option value="Platinum">Platinum</option>
+                <option value ="Gold">Gold</option>
+                <option value ="Silver">Silver</option>
+                <option value="Bronze">Bronze</option>
+            </select>
+
+            <br>
+            <label for="address">Address</label>
+            <br>
+            <textarea id="address" placeholder="Street"></textarea>
+            <br>
+            <input type="checkbox" id="agreement" name="agreement">
+            <label for="agreement"><b>I Agree with the Terms and Condition</b></label><br>
+            <p id="error"></p>
+            <input type="submit" value="Submit">
+            
+        </form>
+    </div>
+
+    <footer>
+        <div id="footerContent">
+            <p>© 2020 Crypton and Bluejack, Inc. All rights reserved. Miku e-SKpo, The Miku e-SKpo Logo are trademarks or registered trademarks of Crypton and Bluejack, Inc. in Indonesia and elsewhere.</p>
+
+            <h1><img src="images/navigation/logo.png" class="icon2"></h1>
+        </div>
+
+    </footer>
+
+    <script src="js/buy.js"></script>
+</body>
+</html>

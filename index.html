@@ -1,58 +1,137 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Home</title>
+</head>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>hi tepe</h1>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+<body>
+    <header>
+        <div id="navBar">
+            <a href="index.html" class="h3"><img src="images/navigation/logo.png" class="icon1"></a>
+            <a id="buyTicket" href="buy.html">Buy Ticket</a>
+            <div class="dropdown">
+                <a href="#"><img src="images/navigation/3bar.png" class="icon3"></a>
+                <div class="dropcontent">
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Concert Gallery</a>
+                    <a href="store.html">Merch Store</a>
+                    <a href="about.html">About Us</a>
+                </div>
+            </div>  
         </div>
-      </nav>
+       
+    </header>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  </body>
+    <div id="content">
+        <div id="mobileView">
+            <a href="index.html">Home</a>
+            <a href="store.html">Merch Store</a>
+            <a href="gallery.html">Concert Gallery</a>
+            <a href="about.html">About Us</a>
+        </div>
+        <div id="slider">
+            <div id="gambar">
+                <div id="slide1">
+                    <img src="images/home/slideshow/galleryImage (5).jpg">
+                    <div class="caption">COLDPLAY PERFROMANCE</div>
+                </div>
+                <div id="slide2">
+                    <img src="images/home/slideshow/galleryImage (1).jpg">
+                    <div class="caption1">ARCTIC MONKEYS PERFROMANCE</div>
+                </div>
+                <div id="slide3">
+                    <img src="images/home/slideshow/galleryImage (2).jpg">
+                    <div class="caption2">OASIS PERFROMANCE</div>
+                </div>
+                <div id="slide4">
+                    <img src="images/home/slideshow/galleryImage (3).jpg">
+                    <div class="caption3">ARCTIC MONKEY PERFROMANCE</div>
+                </div>
+                <div id="slide5">
+                    <img src="images/home/slideshow/galleryImage (4).jpg">
+                    <div class="caption4">OASIS PERFROMANCE</div>
+                </div>               
+            </div>
+            <div id="indicator">
+                <span class="titik active" id="1"></span>
+                <span class="titik" id="2"></span>
+                <span class="titik" id="3"></span>
+                <span class="titik" id="4"></span>
+                <span class="titik" id="5"></span>
+            </div>
+            <button id="next" class="nextbtn">&rsaquo;</button>
+            <button id="prev" class="prevbtn">&lsaquo;</button>
+        </div>
+
+        <h1 class="h1lineup">Line Up</h1>
+        <hr>
+        <div class="lineup">
+            <div class="card">
+                <div class="image">
+                 <img src="images/home/lineup/coldplay.jpg" alt="coldplayImage">
+                </div>
+                <h1>Coldplay</h1>
+                <p>A British rock band that was formed in London in 1996. Vocalist and pianist Chris Martin, guitarist Jonny Buckland, bassist Guy Berryman, and drummer Will Champion.</p>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                 <img src="images/home/lineup/oasis.jpg" alt="oasisImage">
+                </div>
+                <h1>Oasis</h1>
+                <p> Oasis developed from an earlier group, the Rain. Upon returning to Manchester, Liam's older brother, Noel Gallagher joined as a fifth member. They're famous for "Wonderwall"</p>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                 <img src="images/home/lineup/arctic.jpg" alt="AMimage">
+                </div>
+                <h1>Arctic Monkeys</h1>
+                <p>An English rock band formed in Sheffield in 2002. The group consists of Alex Turner, Jamie Cook, Nick O'Malley, and Matt Helders. They have released six studio albums and they're ready to rock!</p>
+            </div>
+        </div>
+        
+        <br>
+        <br>
+
+        <!-- <img class="information" src="images/deskripsi.jpg"> -->
+
+        <br>
+        <br>
+
+        <div id="info">
+            <img class="information" src="images/home/information/background.jpg">
+
+            <h1 id="infoLogo"><img id="logoInfo" src="images/navigation/logo.png"><h1>
+            <p class="text">Miku e-SKpo is a Futuristic Themed Music Concert from collaboration Crypton Company with Bluejacks formed in December 2020 and based on Jakarta, Indonesia.</p>
+
+            <img class="icon" id="loc" src="images/home/information/location.png">
+
+            <img class="icon" id="clock" src="images/home/information/clock.png">
+
+            <img class="icon" id="cal" src="images/home/information/calendar.png">
+
+            <h3 id="locationText">BINTARO JAYA<h3>
+            <h3 id="DateText">12 A.M. - 12 P.M.<h3>
+            <h3 id="TimeText">28 JUNE 2021<h3>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <footer>
+        <div id="footerContent">
+            <p>© 2020 Crypton and Bluejack, Inc. All rights reserved. Miku e-SKpo, The Miku e-SKpo Logo are trademarks or registered trademarks of Crypton and Bluejack, Inc. in Indonesia and elsewhere.</p>
+
+            <h1><img src="images/navigation/logo.png" class="icon2"></h1>
+        </div>
+
+    </footer>
+
+    
+    <script src="js/index.js"></script>
+</body>
 </html>
